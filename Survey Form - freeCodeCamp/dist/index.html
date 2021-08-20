@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form  - freeCodeCamp</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 id="title"> freeCodeCamp Survey Form </h1>
+<p id="description"><i>Thank you for taking the time to help us improve our platform. </i></p>
+
+<form id="survey-form"> 
+<div class="form-control">
+  <label for="name" id="name-label">Name</label>
+  <input type="text" id="name" placeholder="Enter your name" required>
+  </div>
+  
+  <div class="form-control">
+  <label for="email" id="email-label">Email</label>
+  <input type="email" id="email" placeholder="Enter your email" required>
+  </div>
+  
+ 
+  
+    <div class="form-control">
+  <label for="number" id="number-label">Age</label>
+  <input type="number" id="number" placeholder="Enter your age" required min="0" max="200">
+  </div>
+  
+  
+  <div class="form-control">
+  <label for="role">What describes your current role?</label>
+    <select name="role" id="dropdown"> 
+        <option value="student">Student</option>
+        <option value="part-time">Part-time</option>
+        <option value="full-time">Full-time</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="retired">Retired</option>
+        <option value="contract">Contract</option>
+        <option value="other">Other</option>
+     </select>
+  </div>
+
+  
+  <div class="form-control">
+    <label > Would you recommend freeCodeCamp to a peer? </label>
+    <label for="recommend-1" ><input type="radio" name="recommend" id="recommend-1" value="definitely"/>Definitely</label>
+    <label for="recommend-2" ><input type="radio" name="recommend" id="recommend-2" value="maybe"/>Maybe</label>
+    <label for="recommend-3" ><input type="radio" name="recommend" id="recommend-3" value="no"/>No</label>
+  </div>
+    
+  
+  <div class="form-control">
+  <label for="feature" >What is your favourite feature of freeCodeCamp?</label>
+    <select name="feature" id="dropdown"> 
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+      <option value="open-surce">Open Source</option>
+     </select>
+  </div>
+  
+  <div class="form-control">
+    <label>What you like to see improved? <small> (Check all applicable)</small></label>
+    <label for="improve-1"><input type="checkbox" name="improve" id="improve-1" value="improve-1"/>Front-end Projects</label>
+    <label for="improve-2"><input type="checkbox" name="improve" id="improve-2" value="improve-2"/>Back-end Projects</label>
+    <label for="improve-3"><input type="checkbox" name="improve" id="improve-3" value="improve-3"/>Data Visualization</label>
+    <label for="improve-4"><input type="checkbox" name="improve" id="improve-4" value="improve-4"/>Challenges</label>
+    <label for="improve-5"><input type="checkbox" name="improve" id="improve-5" value="improve-5"/>Open Source Community</label>
+    <label for="improve-6"><input type="checkbox" name="improve" id="improve-6" value="improve-6"/>Gitter help rooms</label>
+    <label for="improve-7"><input type="checkbox" name="improve" id="improve-7" value="improve-7"/>Videos</label>
+    <label for="improve-8"><input type="checkbox" name="improve" id="improve-9" value="improve-8"/>City Meetups</label>
+    <label for="improve-9"><input type="checkbox" name="improve" id="improve-9" value="improve-9"/>Wiki</label>
+    <label for="improve-10"><input type="checkbox" name="improve" id="improve-10" value="improve-10"/>Forum</label>
+    <label for="improve-11"><input type="checkbox" name="improve" id="improve-11" value="improve-11"/>Additional Courses</label>
+  </div>
+  
+  <div class="form-control">
+    <label for="comments"> Write any comments or suggestion below:</label>
+    <textarea name="comments" id="comments" placeholder="Enter your comment/suggestion"></textarea>
+  </div>
+    
+  <button type="submit" id="submit"> Submit </button>
+  
+    
+</form>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
